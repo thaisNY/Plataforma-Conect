@@ -55,3 +55,9 @@
 .closedNavUser{
     display: none;
 }
+
+@media(max-width: 400px){
+    .header .imgLogo{
+        max-width: 57px;
+    }
+}
