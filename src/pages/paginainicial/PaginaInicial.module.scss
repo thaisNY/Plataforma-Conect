@@ -10,13 +10,19 @@
   margin-top: 0; // Remove margin superior
 
   h1 {
+    font-family: "Source Sans 3", sans-serif;
     margin-top: 33px;
     color: #205691;
     font-size: 2rem;
     text-align: center;
+    max-width: 16ch;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
 
   p {
+    font-family: "Helvetica", "Arial", sans-serif;
     margin-top: 20px;
     text-align: center;
     color: #205691;
@@ -58,16 +64,20 @@
       align-items: center;
 
       h2 {
+        //rever
+        font-family: "Source Sans 3", sans-serif;
         text-align: center;
         font-weight: bold;
         color: #205691;
         font-size: 1.5rem;
       }
+
       p {
         text-align: center;
-        font-weight: bold;
         color: #205691;
         margin-top: 0.5rem;
+        font-weight: 400;
+        font-style: bold;
       }
     }
   }
@@ -86,6 +96,7 @@
     padding-top: 0;
 
     h1 {
+      font-family: "Source Sans 3", sans-serif;
       font-size: 1.75rem;
     }
 
@@ -93,18 +104,36 @@
       width: 80%;
       padding: 12px 40px;
       font-size: 0.95rem;
+      box-sizing: border-box;
     }
 
     .cardSection {
-      align-items: flex-start;
-      padding: 1.5rem;
-      gap: 1.5rem;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0.75rem 0;
+      gap: 0.75rem;
+    }
+
+    .cardSection .cards {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    .cardSection .cards h2 {
+      font-size: 1.15rem;
+    }
+
+    .cardSection .cards p {
+      font-size: 0.8rem;
     }
 
     .primaryImage {
-      width: 280px;
-      height: 310px;
-      margin-top: -60px;
+      width: 250px;
+      height: 280px;
+      margin-top: -30px;
     }
   }
 
@@ -114,6 +143,7 @@
     padding-top: 0;
 
     h1 {
+      font-family: "Source Sans 3", sans-serif;
       font-size: 2.25rem;
     }
 
@@ -123,12 +153,14 @@
     }
 
     .cadastrarEmpresa {
-      width: 60%;
+      width: auto;
       padding: 15px 50px;
       font-size: 1rem;
     }
 
     .cardSection {
+      flex-wrap: wrap;
+      justify-content: center;
       padding: 1.5rem;
       gap: 2.5rem;
 
@@ -138,9 +170,9 @@
     }
 
     .primaryImage {
-      width: 500px;
-      height: 535px;
-      margin-top: 10px;
+      width: 440px;
+      height: 470px;
+      margin-top: 0px;
     }
   }
 
@@ -157,6 +189,8 @@
     h1 {
       font-size: 4em;
       text-align: left;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     p {

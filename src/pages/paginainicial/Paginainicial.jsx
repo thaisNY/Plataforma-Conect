@@ -1,42 +1,46 @@
-import s from './PaginaInicial.module.scss'
-import banner from '../../assets/imagens/banner.png'
 import arrow from "../../assets/icones/arrow-icon.png";
+import primary from "../../assets/imagens/banner.png";
+import styles from "./PaginaInicial.module.scss";
 
-const Paginainicial = () => {
+export default function PaginaInicial() {
   return (
+    <main className={styles.section}>
+      <section className={styles.textContent}>
+        <h1>Projetos Sociais que transformam</h1>
+        <p>
+          Conectamos sua empresa com projetos sociais impactantes. 
+          Juntos, criamos mudanças reais na comunidade.
+        </p>
 
-  <main className={s.main}>
-   
-    <section className={s.info}>
-      <h1>Projetos Sociais que transformam</h1>
-      <p>Conectamos sua empresa com projetos sociais impactantes. Juntos, criamos mudanças reais na comunidade.</p>
-      <button>
-        Cadastrar Empresa <img src={arrow} alt="Icone de uma seta" />
-      </button>
+        <div>
+          <button className={styles.cadastrarEmpresa}>
+            Cadastrar Empresa <img src={arrow} alt="Icone de uma seta" />
+          </button>
+        </div>
 
-      <section className={s.infoDados}>
-       
-        <article>
-          <h2>500+</h2>
-          <h3>Empresas Voluntárias</h3>
-        </article>
-        <article>
-          <h2>1.2K+</h2>
-          <h3>Projetos Realizados</h3>
-        </article>
-            
-        <article>
-          <h2>50K+</h2>
-          <h3>Vidas Impactadas</h3>
-        </article>
+        <section className={styles.cardSection}>
+          <div className={styles.cards}>
+            <h2>500+</h2>
+            <p>Empresas Voluntárias</p>
+          </div>
+
+          <div className={styles.cards}>
+            <h2>1.2K+</h2>
+            <p>Projetos Realizados</p>
+          </div>
+
+          <div className={styles.cards}>
+            <h2>50K+</h2>
+            <p>Vidas Impactadas</p>
+          </div>
+        </section>
       </section>
 
-    </section> 
-    
-    <img src={banner} alt="Imagem da mao segurando o globo representando responsabilidade social e ambiental" />
-    
-  </main>
-  )
+      <img
+        src={primary}
+        alt="Imagem de duas mãos segurando bonecos de papel e um globo terrestre"
+        className={styles.primaryImage}
+      />
+    </main>
+  );
 }
-
-export default Paginainicial
