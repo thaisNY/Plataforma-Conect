@@ -2,11 +2,12 @@ import Inforcard from "../../components/infocard/Inforcard";
 import igFamilia from "../../assets/imagens/igFamilia.png";
 import igJovem from "../../assets/imagens/igJovem.png";
 import projEscola from "../../assets/imagens/projEscola.png";
+import s from "../Style.module.scss";
 
 const Doacao = () => {
   return (
-    <main>
-        <h1>Pagina de Doação</h1>
+    <main className={s.main}>
+        <h1>Doação</h1>
         <section>
           <article>
             <Inforcard
