@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./globalStyle.scss"
-import Paginainicial from "./pages/paginainicial/PaginaInicial"
+import Paginainicial from "./pages/paginainicial/Paginainicial"
 import Doacao from "./pages/doacao/Doacao"
 import EventosEP from "./pages/eventosEP/EventosEp"
 import Mentoria from "./pages/mentoria/Mentoria"
