@@ -5,7 +5,6 @@
     height: 100vh;
 
     section {
-        border: solid 1px red;
         display: flex;
         align-items: center;
         gap: 20px;
@@ -27,7 +26,15 @@
                 align-items: center;
                 gap: 5px;
                 font-size: 14px;
+                
             }
+        }
+
+        .interesses li {
+            background-color: #D4E7D6;
+            color: #278733;
+            padding: 8px 12px;
+            border-radius: 10px;
         }
     }
 }
@@ -42,3 +49,33 @@
         color: #278733;
     }
 }
+
+@media (max-width: 768px) {
+    .main {
+        height: auto;
+        padding: 20px;
+
+        section {
+            flex-direction: column;
+            gap: 20px;
+
+            img {
+                width: 200px;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .interesses {
+                flex-wrap: wrap !important;
+            }
+        }
+    }
+
+    .div {
+        width: 100%;
+    }
+}
+

@@ -1,5 +1,7 @@
 import s from "./usuario.module.scss";
 import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaRegCalendar } from "react-icons/fa";
 
 const Usuario = () => {
   return (
@@ -13,11 +15,11 @@ const Usuario = () => {
       
           <ul>
             <li> <IoLocationOutline />Caruaru - PE</li>
-            <li>thais@email.com</li>
-            <li>Membro desde Janeiro 2022</li>
+            <li> <MdOutlineEmail />thais@email.com</li>
+            <li><FaRegCalendar />Membro desde Janeiro 2022</li>
           </ul>
 
-          <ul>
+          <ul className={s.interesses}>
             <li>Educação</li>
             <li>Meio Ambiente</li>
             <li>Assistência Social</li>
