@@ -1,0 +1,22 @@
+.eventosMain {
+  section > article :global(article) {
+    justify-content: flex-start;
+    h2 {
+      line-height: 1.15;
+      margin-bottom: 8px;
+     
+    }
+
+    p {
+       font-size: 13px;
+    }
+
+    p + p {
+      margin-top: 12px;
+    }
+
+    button{
+        margin-top: 16px;
+    }
+  }
+}
