@@ -1,16 +1,64 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🤝 Plataforma Connect
 
-Currently, two official plugins are available:
+A **Plataforma Connect** é uma aplicação web desenvolvida para conectar empresas e voluntários a projetos sociais de alto impacto. O objetivo é facilitar a transformação social através da tecnologia, permitindo a gestão de doações, mentorias e eventos comunitários.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📺 Demonstração do Projeto
 
-## React Compiler
+Confira o vídeo de demonstração das funcionalidades e da interface da plataforma:
+👉 **[Link para o vídeo no YouTube](https://www.google.com/search?q=https://www.youtube.com/watch?v=G888cZigCrM)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 **[Link do Deploy](https://plataforma-conect-ruby.vercel.app/)**
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este projeto foi construído utilizando as seguintes ferramentas:
+
+  * **React 19**: Biblioteca principal para construção da interface.
+  * **Vite**: Ferramenta de build para um desenvolvimento rápido e otimizado.
+  * **Sass (SCSS)**: Para estilização avançada e modular com uso de variáveis e mixins.
+  * **React Router Dom**: Gerenciamento de rotas e navegação SPA.
+  * **SweetAlert2**: Para notificações e alertas interativos de sucesso nas inscrições.
+  * **React Icons**: Biblioteca de ícones para melhorar a experiência visual.
+
+## 🧠 O que aprendi e apliquei
+Neste projeto, foquei em boas práticas de arquitetura frontend e performance:
+
+SPA & Roteamento Dinâmico: Utilizei Vite para um setup ágil e o react-router-dom para gerenciar a navegação Single Page Application (SPA), garantindo uma transição de páginas fluida.
+
+Hooks & Reatividade: Implementei useState e useEffect para criar interfaces vivas. Um destaque foi o Header Responsivo, que monitora o redimensionamento da janela via JavaScript para alternar entre menus de forma inteligente.
+
+Componentização & Props (DRY): Apliquei o princípio Don't Repeat Yourself. Criei componentes altamente reutilizáveis, como o InfoCard, que funciona como uma "peça de Lego" alimentada por diferentes dados via props.
+
+Estilização Modular: Adotei SASS com CSS Modules para garantir o escopo local dos estilos e evitar conflitos de classes, além de integrar o SweetAlert2 para uma experiência de usuário (UX) mais amigável com alertas personalizados.
+
+## 🔧 Como Executar o Projeto
+
+1.  **Clonar o repositório:**
+
+    ```bash
+    git clone https://github.com/seu-usuario/plataforma-conect.git
+    ```
+
+2.  **Instalar as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Iniciar o servidor de desenvolvimento:**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Acessar no navegador:**
+    O projeto estará disponível em `http://localhost:5173`.
+
+-----
+
+## 📝 Licença
+
+Este projeto é destinado exclusivamente a fins educativos e está sob a licença **MIT**.
+
+Desenvolvido por **Thais Rodrigues**.
